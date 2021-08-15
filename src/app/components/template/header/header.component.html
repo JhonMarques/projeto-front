@@ -1,28 +1,16 @@
 <mat-toolbar class="header">
-  <mat-button-toggle-group appearance="legacy" class="buttonToggle" name="fontStyle" aria-label="Font Style">
-  
-  
-    <mat-button-toggle value="bold">
-      <a routerLink="" mat-list-item>
-        <i class="material-icons">home</i>
-        Home
-    </a>
-    </mat-button-toggle>
+  <ul class="nav">
 
-    <mat-button-toggle value="italic">
-      <a routerLink="/clientes" mat-list-item>
-        <i class="material-icons">account_circle</i>
-        Clientes
-    </a>
-    </mat-button-toggle>
+      <a class="nav-link active" href="#">Home</a>
+  
+    </ul>
+    <ul class="nav">
+        <a class="nav-link active" href="/clientes">Clientes</a>
+      </ul>
+      <ul class="nav">
+          <a class="nav-link active" href="/cidades">Cidades</a>
+      </ul>
 
-    <mat-button-toggle value="underline">
-      <a routerLink="/cidades" mat-list-item>
-        <i class="material-icons">map</i>
-        Cidades
-    </a>
-    </mat-button-toggle>
-  </mat-button-toggle-group>
     <span>
           <h1>GERENCIADOR DE CLIENTES</h1>
       </span>

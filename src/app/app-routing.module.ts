@@ -7,6 +7,7 @@ import { CidadeCreateComponent } from './components/views/cidade/cidade-create/c
 import { CidadeDeleteComponent } from './components/views/cidade/cidade-delete/cidade-delete.component';
 import { ClienteReadComponent } from './components/views/cliente-read/cliente-read.component';
 import { ClienteCreateComponent } from './components/views/cliente/cliente-create/cliente-create.component';
+import { ClienteUpdateComponent } from './components/views/cliente/cliente-update/cliente-update.component';
 
 const routes: Routes = [
 
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path:'clientes/create',
     component: ClienteCreateComponent
+  },
+  {
+    path:'clientes/update/:id',
+    component: ClienteUpdateComponent
   },
 
 

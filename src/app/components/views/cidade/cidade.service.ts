@@ -1,3 +1,4 @@
+import { Cliente } from './../cliente/cliente.model';
 import { Cidade } from './cidade.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -22,6 +23,7 @@ export class CidadeService {
 
   findAll():Observable<Cidade[]> {
     const url = `${this.baseUrl}/cidades/listarTodos`
+
     return this.http.get<Cidade[]>(url)
   }
 

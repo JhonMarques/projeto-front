@@ -5,10 +5,10 @@ export interface Cliente{
     endereco: string;
     numero: string;
     bairro: string;
-    id_cidade: string;
+    cidade: string;
     cep?: string;
     telefone: string;
     email: string;
-    ativo?: string;
+    ativo: boolean;
 
 }

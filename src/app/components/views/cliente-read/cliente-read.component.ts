@@ -15,7 +15,7 @@ export class ClienteReadComponent implements OnInit {
 
 
   displayedColumns: string[] = ["id", "nome", "cpf", "endereco","numero"
-  ,"bairro","id_cidade","cep","telefone", "ativo", "acoes"];
+  ,"bairro","cidade","cep","telefone", "ativo", "acoes"];
 
 
   constructor(private service: ClienteService, private router: Router, private route: ActivatedRoute) { }

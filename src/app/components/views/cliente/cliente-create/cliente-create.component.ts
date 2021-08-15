@@ -18,10 +18,10 @@ export class ClienteCreateComponent implements OnInit {
     endereco: '',
     numero: '',
     bairro: '',
-    id_cidade: '',
+    cidade: '',
     cep: '',
     email: '',
-    ativo: ''
+    ativo: true,
   }
 
 
@@ -35,6 +35,7 @@ export class ClienteCreateComponent implements OnInit {
       this.router.navigate(['clientes'])
       this.service.mensagem('Cliente cadastrado com sucesso!');
   }, err => {
+    
     for(let i = 0; i < err.error.errors.length; i++){
       this.service.mensagem(err.error.errors[i].message)
     }

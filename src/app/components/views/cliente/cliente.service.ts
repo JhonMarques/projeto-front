@@ -14,12 +14,12 @@ export class ClienteService {
   constructor(private http: HttpClient,  private _snack: MatSnackBar) { }
 
   findAll():Observable<Cliente[]> {
-    const url = `${this.baseUrl}/clientes/listarTodos`
+    const url = `${this.baseUrl}/clientes/listarAtivos`
     return this.http.get<Cliente[]>(url)
   }
 
   findById(id: string): Observable<Cliente> {
-    const url = `${this.baseUrl}/cidades/buscarCliente/${id}`
+    const url = `${this.baseUrl}/clientes/buscarCliente/${id}`
     return this.http.get<Cliente>(url)
   }
     
@@ -33,7 +33,6 @@ export class ClienteService {
     const url = `${this.baseUrl}/clientes/atualizarCliente/${cliente.id}`
     return this.http.put<void>(url, cliente)
   }
- 
  
    mensagem(str: string): void {
     this._snack.open(`${str}`, 'OK',{

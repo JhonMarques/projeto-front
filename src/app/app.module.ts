@@ -27,6 +27,8 @@ import { CidadeCreateComponent } from './components/views/cidade/cidade-create/c
 import { CidadeDeleteComponent } from './components/views/cidade/cidade-delete/cidade-delete.component';
 import { ClienteReadComponent } from './components/views/cliente-read/cliente-read.component';
 import { ClienteCreateComponent } from './components/views/cliente/cliente-create/cliente-create.component';
+import { ClienteUpdateComponent } from './components/views/cliente/cliente-update/cliente-update.component';
+import { ClienteDisableComponent } from './components/views/cliente/cliente-disable/cliente-disable.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ClienteCreateComponent } from './components/views/cliente/cliente-creat
     CidadeCreateComponent,
     CidadeDeleteComponent,
     ClienteReadComponent,
-    ClienteCreateComponent
+    ClienteCreateComponent,
+    ClienteUpdateComponent,
+    ClienteDisableComponent
   ],
   imports: [
     BrowserModule,
