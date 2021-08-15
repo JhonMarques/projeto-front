@@ -1,0 +1,17 @@
+<form>
+    <h1>NOVA CIDADE</h1>
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="cidade.nome" type="text" name="nome" placeholder="Ex. Campinas">
+    </mat-form-field> 
+    
+    <mat-form-field class="form">
+        <mat-label>Estado</mat-label>
+        <input matInput [(ngModel)]="cidade.uf" type="text" name="uf" placeholder="Ex. SP">
+    </mat-form-field> 
+
+    <div class="buttons">
+        <button (click) = "create()" class="mat-elevation-z8" mat-flat-button color="primary">SALVAR</button>
+        <button (click) = "cancel()"routerLinkActive="router-link-active"  class="mat-elevation-z8" mat-flat-button color="warn">CANCELAR</button>
+    </div>
+</form>

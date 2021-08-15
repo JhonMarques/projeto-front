@@ -1,0 +1,23 @@
+.header{
+    height: 6%;
+    background-color: rgb(80, 96, 238);
+  }
+  
+  span{
+    margin-left: 12rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  h1{
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    color: aliceblue;
+  }
+  
+  .mat-button-toggle-group{
+  
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+  }
+  

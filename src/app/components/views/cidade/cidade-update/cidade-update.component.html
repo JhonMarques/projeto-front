@@ -1,0 +1,16 @@
+<form>
+    <h1>EDITAR CIDADE</h1>
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="cidade.nome" type="text" name="nome">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>UF</mat-label>
+        <textarea matInput [(ngModel)]="cidade.uf" type="text" name="uf"></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="update()" class="mat-elevation-z8" mat-flat-button color="primary">ATUALIZAR</button>
+        <button (click)="cancel()"  class="mat-elevation-z8" mat-flat-button color="warn">CANCELAR</button>
+    </div>
+</form>
