@@ -1,0 +1,81 @@
+<div class="content">
+  
+    <div class="title">
+      <h1>CLIENTES CADASTRADOS</h1>
+    </div>
+  
+    <button class="mat-elevation-z8" (click) = "navegarClienteCreate()" mat-flat-button color="primary"> NOVO CLIENTE </button>
+    <button style="margin-left: 1rem;" class="mat-elevation-z8" mat-flat-button color="warn"> INATIVOS </button>
+  
+    <div class="mat-elevation-z8 content-table">
+      <table class="table" mat-table [dataSource]="clientes" >
+  
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef>ID</th>
+          <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+        </ng-container>
+  
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef>NOME</th>
+          <td mat-cell *matCellDef="let row">{{ row.nome }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="cpf">
+            <th mat-header-cell *matHeaderCellDef>CPF/CNPJ</th>
+            <td mat-cell *matCellDef="let row">{{ row.cpf }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="endereco">
+            <th mat-header-cell *matHeaderCellDef>ENDEREÇO</th>
+            <td mat-cell *matCellDef="let row">{{ row.endereco }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="numero">
+            <th mat-header-cell *matHeaderCellDef>N°</th>
+            <td mat-cell *matCellDef="let row">{{ row.numero }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="bairro">
+            <th mat-header-cell *matHeaderCellDef>BAIRRO</th>
+            <td mat-cell *matCellDef="let row">{{ row.bairro }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="id_cidade">
+          <th mat-header-cell *matHeaderCellDef>CIDADE</th>
+          <td mat-cell *matCellDef="let row">{{ row.id_cidade }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="cep">
+          <th mat-header-cell *matHeaderCellDef>CEP</th>
+          <td mat-cell *matCellDef="let row">{{ row.cep }}</td>
+        </ng-container>
+
+          <ng-container matColumnDef="telefone">
+            <th mat-header-cell *matHeaderCellDef>TELEFONE</th>
+            <td mat-cell *matCellDef="let row">{{ row.telefone }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="ativo">
+            <th mat-header-cell *matHeaderCellDef>ATIVO</th>
+            <td mat-cell *matCellDef="let row">{{ row.ativo }}</td>
+          </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="acoes">
+              <th class="mat-header" mat-header-cell *matHeaderCellDef> AÇÕES </th>
+             
+              <td mat-cell *matCellDef="let row">
+
+                <a class="edit" routerLink="update/{{ row.id }}">
+                  <i class="material-icons">edit</i>
+                </a>
+          
+                </td>
+                
+            </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+  </div>

@@ -1,0 +1,55 @@
+<form>
+    <h1>NOVO CLIENTE</h1>
+
+    <mat-form-field class="form">
+        <mat-label>NOME</mat-label>
+        <input matInput [(ngModel)]="cliente.nome" type="text" name="nome" >
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>CPF/CNPJ</mat-label>
+        <input matInput [(ngModel)]="cliente.cpf" type="text" name="cpf">
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>TELEFONE</mat-label>
+        <input matInput [(ngModel)]="cliente.telefone" type="text" name="telefone" >
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>E-MAIL</mat-label>
+        <input matInput [(ngModel)]="cliente.email" type="text" name="email" >
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>ENDEREÇO</mat-label>
+        <input matInput [(ngModel)]="cliente.endereco" type="text" name="endereco" >
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>N°</mat-label>
+        <input matInput [(ngModel)]="cliente.numero" type="text" name="numero" >
+    </mat-form-field> 
+    
+    <mat-form-field class="form">
+        <mat-label>BAIRRO</mat-label>
+        <input matInput [(ngModel)]="cliente.bairro" type="text" name="bairro" >
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>CIDADE</mat-label>
+        <input matInput [(ngModel)]="cliente.id_cidade" type="text" name="id_cidade">
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>CEP</mat-label>
+        <input matInput [(ngModel)]="cliente.cep" type="text" name="cep" >
+    </mat-form-field> 
+
+    
+
+    <div class="buttons">
+        <button (click) = "create()" class="mat-elevation-z8" mat-flat-button color="primary">SALVAR</button>
+        <button routerLinkActive="router-link-active"  class="mat-elevation-z8" mat-flat-button color="warn">CANCELAR</button>
+    </div>
+</form>

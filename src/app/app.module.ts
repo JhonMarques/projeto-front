@@ -25,6 +25,8 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { CidadeUpdateComponent } from './components/views/cidade/cidade-update/cidade-update.component';
 import { CidadeCreateComponent } from './components/views/cidade/cidade-create/cidade-create.component';
 import { CidadeDeleteComponent } from './components/views/cidade/cidade-delete/cidade-delete.component';
+import { ClienteReadComponent } from './components/views/cliente-read/cliente-read.component';
+import { ClienteCreateComponent } from './components/views/cliente/cliente-create/cliente-create.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { CidadeDeleteComponent } from './components/views/cidade/cidade-delete/c
     NavComponent,
     CidadeUpdateComponent,
     CidadeCreateComponent,
-    CidadeDeleteComponent
+    CidadeDeleteComponent,
+    ClienteReadComponent,
+    ClienteCreateComponent
   ],
   imports: [
     BrowserModule,
