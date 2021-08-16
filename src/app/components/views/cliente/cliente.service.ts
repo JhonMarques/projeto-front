@@ -18,6 +18,12 @@ export class ClienteService {
     return this.http.get<Cliente[]>(url)
   }
 
+  findInative():Observable<Cliente[]> {
+    const url = `${this.baseUrl}/clientes/listarInativos`
+    return this.http.get<Cliente[]>(url)
+  }
+
+
   findById(id: string): Observable<Cliente> {
     const url = `${this.baseUrl}/clientes/buscarCliente/${id}`
     return this.http.get<Cliente>(url)

@@ -1,14 +1,14 @@
 <div class="content">
   
     <div class="title">
-      <h1>CLIENTES CADASTRADOS</h1>
+      <h1>CLIENTES INATIVOS</h1>
     </div>
   
-    <button class="mat-elevation-z8" (click) = "navegarClienteCreate()" mat-flat-button color="primary"> NOVO CLIENTE </button>
-    <button style="margin-left: 1rem;"(click)="navegarClienteInativo()" class="mat-elevation-z8" mat-flat-button color="warn"> INATIVOS </button>
+    <button class="mat-elevation-z8" (click) = "navegarClienteAtivo()" mat-flat-button color="primary"> CLIENTES CADASTRADOS</button>
+  
   
     <div class="mat-elevation-z8 content-table">
-      <table class="table" mat-table [dataSource]="clientes" >
+      <table class="table" mat-table [dataSource]= "clientesDisable">
   
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef>ID</th>

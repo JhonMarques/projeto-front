@@ -29,6 +29,7 @@ import { ClienteReadComponent } from './components/views/cliente-read/cliente-re
 import { ClienteCreateComponent } from './components/views/cliente/cliente-create/cliente-create.component';
 import { ClienteUpdateComponent } from './components/views/cliente/cliente-update/cliente-update.component';
 import { ClienteDisableComponent } from './components/views/cliente/cliente-disable/cliente-disable.component';
+import { ClienteReadDisableComponent } from './components/views/cliente/cliente-read-disable/cliente-read-disable.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ClienteDisableComponent } from './components/views/cliente/cliente-disa
     ClienteReadComponent,
     ClienteCreateComponent,
     ClienteUpdateComponent,
-    ClienteDisableComponent
+    ClienteDisableComponent,
+    ClienteReadDisableComponent
   ],
   imports: [
     BrowserModule,

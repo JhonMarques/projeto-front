@@ -33,4 +33,10 @@ export class ClienteReadComponent implements OnInit {
   navegarClienteCreate(){
     this.router.navigate(['clientes/create'])
   }
+
+  navegarClienteInativo(){
+    this.router.navigate(['clientes/inative'])
+  }
+
+
 }

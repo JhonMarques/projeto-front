@@ -1,3 +1,4 @@
+import { ClienteReadDisableComponent } from './components/views/cliente/cliente-read-disable/cliente-read-disable.component';
 import { ClienteDisableComponent } from './components/views/cliente/cliente-disable/cliente-disable.component';
 import { CidadeUpdateComponent } from './components/views/cidade/cidade-update/cidade-update.component';
 import { HomeComponent } from './components/template/home/home.component';
@@ -52,6 +53,11 @@ const routes: Routes = [
     path:'clientes/disable/:id',
     component: ClienteDisableComponent
   },
+  {
+    path:'clientes/inative',
+    component: ClienteReadDisableComponent
+  },
+
 
 
 ];
