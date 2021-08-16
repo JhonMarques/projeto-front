@@ -4,7 +4,7 @@
   }
   
   span{
-    margin-left: 11rem;
+    margin-left: 7rem;
     display: flex;
     align-items: center;
     
@@ -15,3 +15,6 @@
     color: aliceblue;
   }
 
+  .nav {
+    font-size: 1.2rem;
+  }

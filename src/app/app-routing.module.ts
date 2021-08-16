@@ -1,3 +1,4 @@
+import { ClienteDisableComponent } from './components/views/cliente/cliente-disable/cliente-disable.component';
 import { CidadeUpdateComponent } from './components/views/cidade/cidade-update/cidade-update.component';
 import { HomeComponent } from './components/template/home/home.component';
 import { NgModule } from '@angular/core';
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path:'clientes/update/:id',
     component: ClienteUpdateComponent
+  },
+  {
+    path:'clientes/disable/:id',
+    component: ClienteDisableComponent
   },
 
 

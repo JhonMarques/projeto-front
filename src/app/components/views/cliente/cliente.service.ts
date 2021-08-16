@@ -33,6 +33,11 @@ export class ClienteService {
     const url = `${this.baseUrl}/clientes/atualizarCliente/${cliente.id}`
     return this.http.put<void>(url, cliente)
   }
+
+  disable(cliente: Cliente):Observable<void> {
+    const url = `${this.baseUrl}/clientes/atualizarCliente/${cliente.id}`
+    return this.http.put<void>(url, cliente)
+  }
  
    mensagem(str: string): void {
     this._snack.open(`${str}`, 'OK',{
