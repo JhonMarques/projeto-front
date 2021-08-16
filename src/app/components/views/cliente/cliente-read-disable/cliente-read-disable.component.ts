@@ -33,4 +33,6 @@ export class ClienteReadDisableComponent implements OnInit {
   navegarClienteAtivo(){
     this.router.navigate(['clientes'])
   }
+
+
 }

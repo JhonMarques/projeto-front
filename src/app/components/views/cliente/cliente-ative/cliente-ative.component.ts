@@ -4,11 +4,11 @@ import { Cliente } from '../cliente.model';
 import { ClienteService } from '../cliente.service';
 
 @Component({
-  selector: 'app-cliente-disable',
-  templateUrl: './cliente-disable.component.html',
-  styleUrls: ['./cliente-disable.component.css']
+  selector: 'app-cliente-ative',
+  templateUrl: './cliente-ative.component.html',
+  styleUrls: ['./cliente-ative.component.css']
 })
-export class ClienteDisableComponent implements OnInit {
+export class ClienteAtiveComponent implements OnInit {
 
   cliente: Cliente ={
     nome: '',
@@ -46,7 +46,7 @@ export class ClienteDisableComponent implements OnInit {
       this.cliente.cep = resposta.cep;
       this.cliente.telefone = resposta.telefone;
       this.cliente.email = resposta.email;
-      this.cliente.ativo = false;
+      this.cliente.ativo = true;
     });
 
   }
@@ -54,7 +54,7 @@ export class ClienteDisableComponent implements OnInit {
   disable(): void {
     this.service.update(this.cliente).subscribe((resposta) => {
       this.router.navigate(["clientes"]);
-      this.service.mensagem("Cliente desativado com sucesso");
+      this.service.mensagem("Cliente ativado com sucesso!");
     }, err => {
       this.service.mensagem('Validar se todos os campos estão preenchidos corretamente!')
     });
@@ -65,6 +65,4 @@ export class ClienteDisableComponent implements OnInit {
     this.router.navigate(['clientes']);
   }
 
-
 }
-

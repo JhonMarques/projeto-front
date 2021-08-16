@@ -1,0 +1,48 @@
+<form>
+    <h1>INATIVAR UM CLIENTE</h1>
+
+    <mat-form-field class="form">
+        <mat-label>NOME</mat-label>
+        <input matInput [(ngModel)]="cliente.nome" type="text" name="nome" disabled>
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>CPF/CNPJ</mat-label>
+        <input matInput  [(ngModel)]="cliente.cpf" type="text" name="cpf" disabled>
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>TELEFONE</mat-label>
+        <input matInput [(ngModel)]="cliente.telefone" type="text" name="telefone"disabled >
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>ENDEREÇO</mat-label>
+        <input matInput [(ngModel)]="cliente.endereco" type="text" name="endereco"disabled>
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>N°</mat-label>
+        <input matInput [(ngModel)]="cliente.numero" type="text" name="numero" disabled>
+    </mat-form-field> 
+    
+    <mat-form-field class="form">
+        <mat-label>BAIRRO</mat-label>
+        <input matInput [(ngModel)]="cliente.bairro" type="text" name="bairro" disabled>
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>CIDADE</mat-label>
+        <input matInput [(ngModel)]="cliente.cidade" type="text" name="id_cidade" disabled>
+    </mat-form-field> 
+
+    <mat-form-field class="form">
+        <mat-label>CEP</mat-label>
+        <input matInput [(ngModel)]="cliente.cep" type="text" name="cep" disabled>
+    </mat-form-field> 
+
+    <div class="buttons">
+        <button class="mat-elevation-z8" (click)="disable()" mat-flat-button color="primary">ATIVAR CLIENTE</button>
+        <button  class="mat-elevation-z8" (click)= "cancel()" mat-flat-button color="warn">CANCELAR</button>
+    </div>
+</form>

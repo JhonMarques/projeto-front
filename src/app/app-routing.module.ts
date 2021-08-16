@@ -1,3 +1,4 @@
+import { ClienteAtiveComponent } from './components/views/cliente/cliente-ative/cliente-ative.component';
 import { ClienteReadDisableComponent } from './components/views/cliente/cliente-read-disable/cliente-read-disable.component';
 import { ClienteDisableComponent } from './components/views/cliente/cliente-disable/cliente-disable.component';
 import { CidadeUpdateComponent } from './components/views/cidade/cidade-update/cidade-update.component';
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path:'clientes/inative',
     component: ClienteReadDisableComponent
+  },
+  {
+    path:'clientes/inative/habilitar/:id',
+    component: ClienteAtiveComponent
   },
 
 
